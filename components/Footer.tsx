@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className="bg-[#212731] text-[#B6BDC4] h-72 p-5">
         {footerDetails.map((item) => (
-            <div className="flex flex-row justify-around items-start">
+            <div className="flex flex-row justify-around items-start" key={item.id}>
                 <div className="p-4 flex flex-col gap-3">
                     <h1 className="uppercase text-white md:text-xl text-lg">Categories</h1>
                     {item.categories.map((category) => (

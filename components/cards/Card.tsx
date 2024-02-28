@@ -59,9 +59,8 @@ const Card = () => {
       ))}
       {/* this is for 4th card */}
       {CardDetails.filter((card, index) => index === 3).map((card) => (
-        <div>
+        <div key={card.cardId}>
           <div
-            key={card.cardId}
             className="flex flex-row hover:bg-gray-100 rounded-md">
             {/* this div is for image  */}
             <div className="w-1/4 p-4 ">
@@ -95,19 +94,19 @@ const Card = () => {
                 <li>
                   <span className="bg-white text-blue-500 px-3 py-1 rounded-lg">
                     9.9
-                  </span>{" "}
+                  </span>
                   Building Response
                 </li>
                 <li>
                   <span className="bg-white text-blue-500 px-3 py-1 rounded-lg">
                     8.9
-                  </span>{" "}
+                  </span>
                   Cool
                 </li>
                 <li>
                   <span className="bg-white text-blue-500 px-3 py-1 rounded-lg">
                     8.9
-                  </span>{" "}
+                  </span>
                   Docs
                 </li>
               </ul>

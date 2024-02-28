@@ -140,6 +140,7 @@ export const RelatedCards = [
 
 export const footerDetails = [
    {
+    id: 1,
     categories: [
         {
             id: 1 ,
